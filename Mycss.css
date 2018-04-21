@@ -1,0 +1,22 @@
+body{
+	background-color: rgb(182, 245, 237);
+}
+
+i{
+	color: #ffffff;
+	font-size: 20px;
+}
+
+i:hover{
+	color: gray;
+}
+
+kbd{
+	padding: 10px;
+	background-color: mediumseagreen;
+	border: 2px solid;
+}
+
+.pre{
+	margin-top: 100px;
+}
