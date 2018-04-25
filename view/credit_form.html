@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="Mycss.css">
+</head>
+<body background="img/bg.jpg">
+    <div class="card" style="width: 800px;margin-top:100px;margin-left:550px;border-radius:7px;border: 3px solid;border-radius: 5px;">
+      <div class="card-header text-center">Payment Details</div>
+      <div class="card-body">
+      <center><img src="img/visa.png" class="rounded" alt="Cinque Terre" width="200" height="150"></center>
+      <form action="#">
+      <fieldset style="padding-left: 100px;">
+      <label for="card-number" >Card Number</label>
+      <input type="num" id="card-number-0" class="input-card-number" maxlength="4" placeholder="xxxx"/>-
+      <input type="num" id="card-number-1" class="input-card-number" maxlength="4" placeholder="xxxx"/>-
+      <input type="num" id="card-number-2" class="input-card-number" maxlength="4" placeholder="xxxx"/>-
+      <input type="num" id="card-number-3" class="input-card-number" maxlength="4" placeholder="xxxx"/>
+    </fieldset>
+
+
+
+    <fieldset style="padding-left: 100px;">
+      <label for="card-holder">Card holder</label>
+      <input type="text" id="card-holder" placeholder="Enter your name" style="text-align: center;border: 2px solid;
+        border-radius: 5px;"/>
+    </fieldset>
+
+    <fieldset class="fieldset-expiration" style="padding-left: 100px;">
+      <label for="card-expiration-month">Expiration date</label>
+      <div class="select" style="width: 50px;margin-right: 12px;float: left;">
+        <select id="card-expiration-month" style="border: 2px solid;border-radius: 5px;">
+          <option></option>
+          <option>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+      </div>
+      <div class="select">
+        <select id="card-expiration-year" style="border: 2px solid;border-radius: 5px;">
+          <option></option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset style="padding-left: 100px;">
+      <label for="card-holder">CCV</label>
+      <input type="text" id="card-holder" placeholder="xxx" style="text-align: center;border: 2px solid;
+        border-radius: 5px;"/>
+    </fieldset>
+
+    
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-dark" href="#" role="button">Submit</a>
+        <a class="btn btn-secondary" href="index.html" role="button">Back</a>
+      </div>
+      </form>
+      </div>
+</body>
+</html>
