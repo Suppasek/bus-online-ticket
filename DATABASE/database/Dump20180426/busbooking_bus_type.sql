@@ -16,29 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `payment`
+-- Table structure for table `bus_type`
 --
 
-DROP TABLE IF EXISTS `payment`;
+DROP TABLE IF EXISTS `bus_type`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `payment` (
-  `payment_id` int(11) NOT NULL AUTO_INCREMENT,
-  `type` enum('credit/debit','transfer') NOT NULL,
-  `amount` float NOT NULL,
-  `payment_time` datetime NOT NULL,
-  PRIMARY KEY (`payment_id`)
+CREATE TABLE `bus_type` (
+  `type_id` int(11) NOT NULL AUTO_INCREMENT,
+  `typename` varchar(45) DEFAULT NULL,
+  `price` float DEFAULT NULL,
+  `seat_available` int(11) DEFAULT NULL,
+  PRIMARY KEY (`type_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `payment`
+-- Dumping data for table `bus_type`
 --
 
-LOCK TABLES `payment` WRITE;
-/*!40000 ALTER TABLE `payment` DISABLE KEYS */;
-INSERT INTO `payment` VALUES (1,'credit/debit',4,'2018-04-23 16:36:03'),(2,'credit/debit',4,'2018-04-23 16:41:45'),(3,'credit/debit',400,'2018-04-23 16:43:47'),(4,'credit/debit',750,'2018-04-23 16:58:18');
-/*!40000 ALTER TABLE `payment` ENABLE KEYS */;
+LOCK TABLES `bus_type` WRITE;
+/*!40000 ALTER TABLE `bus_type` DISABLE KEYS */;
+INSERT INTO `bus_type` VALUES (2,'vip',750,30),(3,'normal',400,50);
+/*!40000 ALTER TABLE `bus_type` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-23 17:30:06
+-- Dump completed on 2018-04-26 21:02:39

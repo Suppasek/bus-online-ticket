@@ -32,7 +32,7 @@ CREATE TABLE `bus_table` (
   PRIMARY KEY (`route_id`),
   KEY `bus_bid_idx` (`bus_bid`),
   CONSTRAINT `bus_bid` FOREIGN KEY (`bus_bid`) REFERENCES `bus` (`bus_id`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `bus_table` (
 
 LOCK TABLES `bus_table` WRITE;
 /*!40000 ALTER TABLE `bus_table` DISABLE KEYS */;
-INSERT INTO `bus_table` VALUES (27,'2018-04-15','12:30:00','bkk','cnx',2),(28,'2018-04-15','11:30:00','bkk','cnx',3);
+INSERT INTO `bus_table` VALUES (45,'2018-04-27','16:00:00','bkk','cnx',3),(46,'2018-04-27','16:30:00','bkk','cnx',2);
 /*!40000 ALTER TABLE `bus_table` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-23 17:30:06
+-- Dump completed on 2018-04-26 21:02:41

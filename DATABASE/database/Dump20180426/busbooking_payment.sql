@@ -16,32 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `user`
+-- Table structure for table `payment`
 --
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `payment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user` (
-  `user_id` varchar(10) NOT NULL,
-  `password` varchar(10) NOT NULL,
-  `first_name` varchar(50) DEFAULT NULL,
-  `last_name` varchar(50) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `phone` varchar(10) DEFAULT NULL,
-  `user_type` enum('customer','ticket_seller','bus_table_manager') DEFAULT NULL,
-  PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `payment` (
+  `payment_id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` enum('credit/debit','transfer') NOT NULL,
+  `amount` float NOT NULL,
+  `payment_time` datetime NOT NULL,
+  PRIMARY KEY (`payment_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `user`
+-- Dumping data for table `payment`
 --
 
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('1531','151','151','151','1151','15','customer'),('abcd','1234','.','.','1111111111','.','customer'),('admin','1234','...','...','9876543210','...','customer'),('boss','1234',NULL,NULL,NULL,NULL,'customer'),('btbbt','mlmlm','klklmklm','mklk','1234567890','...','customer'),('fhnishnf','hnindni','hiohihi','hiohhih','1234567890','ff','customer'),('rubiiruby','123456','penporn','pettammarot','tubihlt-50@gmail.com','0928283391','customer'),('ruby','1234','tubtim','ja','1234567890','...','customer');
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+LOCK TABLES `payment` WRITE;
+/*!40000 ALTER TABLE `payment` DISABLE KEYS */;
+INSERT INTO `payment` VALUES (15,'credit/debit',800,'2018-04-26 20:12:16'),(16,'credit/debit',800,'2018-04-26 20:15:14'),(17,'credit/debit',800,'2018-04-26 20:16:09'),(18,'credit/debit',800,'2018-04-26 20:17:03'),(19,'credit/debit',800,'2018-04-26 20:18:30'),(20,'credit/debit',800,'2018-04-26 20:20:02'),(21,'credit/debit',800,'2018-04-26 20:20:50'),(22,'credit/debit',800,'2018-04-26 20:24:10'),(23,'credit/debit',800,'2018-04-26 20:24:29'),(24,'credit/debit',800,'2018-04-26 20:26:07'),(25,'credit/debit',800,'2018-04-26 20:26:27'),(26,'credit/debit',800,'2018-04-26 20:27:09'),(27,'credit/debit',800,'2018-04-26 20:27:48'),(28,'credit/debit',800,'2018-04-26 20:31:14'),(29,'credit/debit',800,'2018-04-26 20:36:58'),(30,'credit/debit',800,'2018-04-26 20:41:22');
+/*!40000 ALTER TABLE `payment` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-23 17:30:05
+-- Dump completed on 2018-04-26 21:02:41
