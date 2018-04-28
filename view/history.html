@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bus table</title>
+  <title>History</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
@@ -17,7 +17,7 @@
       <div class="card-header">
       <div class="card-body">
         <div class="container text-center">
-  <code><h2>Bus Table</h2></code>
+  <code><h2>History</h2></code>
   <table class="table table-condensed">
     <thead>
       <tr>
@@ -26,7 +26,7 @@
         <th>Leaving date</th>
         <th>Leaving time</th>
         <th>Bustype</th>
-        <th>Select</th>
+        <th>Status</th>
       </tr>
     </thead>
     <tbody>
@@ -36,10 +36,7 @@
         <td>2018-04-27</td>
         <td>16:00</td>
         <td>Normal</td>
-        <td>
-          <div class="radio"><input type="radio" name="optradio">
-      </div>
-      </td>
+        <td><kbd class="history">Complete</kbd></td>
     </tbody>
 
     <tbody>
@@ -49,8 +46,7 @@
         <td>2018-04-27</td>
         <td>16:30</td>
         <td>VIP</td>
-        <td>
-          <div class="radio"><input type="radio" name="optradio">
+        <td><kbd class="history">Complete</kbd></td>
       </div>
       </td>
     </tbody>
@@ -58,9 +54,7 @@
     
   </table>
   <hr style="background-color: black;">
-          <a class="btn btn-success" href="payment.html" role="button">Submit</a>
-        <a class="btn btn-secondary" href="index.html" role="button">Back</a>
-</div>
+    <a class="btn btn-secondary" href="index.html" role="button">Back</a>
 </div>
 </div>
 </body>
